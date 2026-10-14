@@ -1,12 +1,10 @@
-# BEESocial 2.0, a Bee Themed Private Social Media Prototype
+# BEESocial, a Bee Themed Private Social Media Prototype
 
 BEESocial is a multi page static social media app. It was made for a web development midterm activity. The goal is a lightweight platform that protects privacy and freedom of expression. It uses only HTML, CSS, and vanilla JavaScript. It has no backend, no database, and no API.
 
-Version 2.0 is a full overhaul of the first prototype. It has a new name, a new bee and honeycomb design, new features, and its own separate storage.
+## What Is New in Version
 
-## What Is New in Version 2.0
-
-1. **Fresh start.** Every saved item now begins with the name beesocial. The first prototype saved data under plain names such as users and posts. Because of that, its old buzzes showed up in the new app. Version 2.0 only reads items that begin with beesocial, so old data is never mixed in. The old data is not deleted. It simply is not read anymore.
+1. **Fresh start.** Every saved item now begins with the name beesocial. The first prototype saved data under plain names such as users and posts. Because of that, its old buzzes showed up in the new app.
 2. **Replies.** Any buzz can be answered. A reply can use the user's name or be anonymous. A reply can be removed by its writer or by the owner of the buzz.
 3. **Night mode.** A button in the menu switches between a day theme and a night theme. The choice is remembered on every page.
 4. **Sorting.** The feed can show the newest buzzes or the buzzes with the most honey.
