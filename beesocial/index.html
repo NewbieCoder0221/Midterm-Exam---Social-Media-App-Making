@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BEESocial is a private, bee themed social media prototype built with HTML, CSS, and JavaScript.">
+  <title>BEESocial | Private Social Media</title>
+  <link rel="icon" href="assets/img/logo.svg">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body data-root="">
+
+  <!-- The navigation bar is created by main.js -->
+  <div id="navbar"></div>
+
+  <section class="hero">
+    <div class="hero-bee"><div class="hero-bee-inner"><img src="assets/img/bee.svg" alt="A friendly bee"></div></div>
+    <h1>Buzz freely. Stay private.</h1>
+    <p>BEESocial is a cozy social hive where you can connect and share ideas without any AI system collecting your personal data.</p>
+    <a class="btn" href="pages/signup.html">Join the hive</a>
+    <a class="btn btn-outline" href="pages/login.html">Log in</a>
+  </section>
+
+  <main class="container">
+    <h2>Why BEESocial</h2>
+    <div class="features">
+      <div class="card">
+        <img class="feature-icon" src="assets/img/icon-comb.svg" alt="Honeycomb icon">
+        <h3>A hive of your own</h3>
+        <p>There is no server, no database, and no tracking. Everything runs inside your browser.</p>
+      </div>
+      <div class="card">
+        <img class="feature-icon" src="assets/img/icon-jar.svg" alt="Honey jar icon">
+        <h3>Your honey stays yours</h3>
+        <p>Passwords are hashed with a random salt. You can delete your account and all your buzzes at any time.</p>
+      </div>
+      <div class="card">
+        <img class="feature-icon" src="assets/img/icon-buzz.svg" alt="Speech bubble icon">
+        <h3>Buzz freely</h3>
+        <p>Post under your name or choose to buzz anonymously. The choice is yours every time.</p>
+      </div>
+    </div>
+
+    <div class="card text-page">
+      <h2>How it works</h2>
+      <ol>
+        <li>Create an account with a username and a strong password.</li>
+        <li>Write a buzz in the feed and pick if your name is shown.</li>
+        <li>Send honey to buzzes you like, search the feed, and manage your profile.</li>
+        <li>Log out or delete everything whenever you want.</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>BEESocial version 2.0 is a student project. No trackers, no cookies, and no servers. Made with honey and code.</p>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>

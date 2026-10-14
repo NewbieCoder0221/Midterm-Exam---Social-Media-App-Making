@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 110" width="140" height="110">
+  <defs>
+    <clipPath id="bodyClip"><ellipse cx="70" cy="68" rx="40" ry="30"/></clipPath>
+  </defs>
+  <!-- antennae -->
+  <path d="M98 44 Q104 28 116 24" fill="none" stroke="#3b2314" stroke-width="3" stroke-linecap="round"/>
+  <path d="M106 48 Q116 36 128 38" fill="none" stroke="#3b2314" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="116" cy="24" r="4" fill="#3b2314"/>
+  <circle cx="128" cy="38" r="4" fill="#3b2314"/>
+  <!-- wings -->
+  <ellipse cx="56" cy="32" rx="16" ry="26" transform="rotate(-20 56 32)" fill="#fffaf0" fill-opacity="0.92" stroke="#8a5a2b" stroke-width="2.5"/>
+  <ellipse cx="82" cy="30" rx="16" ry="26" transform="rotate(18 82 30)" fill="#fffaf0" fill-opacity="0.92" stroke="#8a5a2b" stroke-width="2.5"/>
+  <!-- stinger -->
+  <path d="M32 63 L12 68 L32 73 Z" fill="#3b2314"/>
+  <!-- body and stripes -->
+  <ellipse cx="70" cy="68" rx="40" ry="30" fill="#e8a317"/>
+  <g clip-path="url(#bodyClip)">
+    <rect x="42" y="30" width="10" height="80" fill="#3b2314"/>
+    <rect x="62" y="30" width="10" height="80" fill="#3b2314"/>
+    <rect x="82" y="30" width="10" height="80" fill="#3b2314"/>
+  </g>
+  <ellipse cx="70" cy="68" rx="40" ry="30" fill="none" stroke="#3b2314" stroke-width="3.5"/>
+  <!-- face -->
+  <circle cx="104" cy="62" r="4.5" fill="#3b2314"/>
+  <circle cx="105.5" cy="60.5" r="1.4" fill="#fff6e3"/>
+  <path d="M100 74 Q107 80 113 72" fill="none" stroke="#3b2314" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="96" cy="72" rx="4" ry="2.6" fill="#c65d1e" fill-opacity="0.6"/>
+</svg>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up | BEESocial</title>
+  <link rel="icon" href="../assets/img/logo.svg">
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../">
+
+  <div id="navbar"></div>
+
+  <main class="container">
+    <div class="card auth-card">
+      <h1>Join the hive</h1>
+      <p class="subtitle">We only ask for what we need. No email and no phone number.</p>
+
+      <div id="message" class="message"></div>
+
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="displayName">Display name</label>
+          <input type="text" id="displayName" name="displayName" placeholder="What should the hive call you?" required>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Example, juan_dev" autocomplete="username" required>
+          <p class="hint">3 to 15 characters. Letters, numbers, and underscores only.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password" required>
+          <p class="hint">At least 8 characters with letters and numbers.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Type the password again" autocomplete="new-password" required>
+        </div>
+
+        <div class="form-group check-row">
+          <input type="checkbox" id="showPassword">
+          <label for="showPassword">Show password</label>
+        </div>
+
+        <div class="form-group check-row">
+          <input type="checkbox" id="agree" name="agree">
+          <label for="agree">I agree that my data is saved only in this browser.</label>
+        </div>
+
+        <button type="submit" class="btn btn-full">Sign up</button>
+      </form>
+
+      <p class="switch-text">Already part of the hive? <a href="login.html">Log in</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>BEESocial version 2.0 is a student project. No trackers, no cookies, and no servers. Made with honey and code.</p>
+  </footer>
+
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/signup.js"></script>
+</body>
+</html>

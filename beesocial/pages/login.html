@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in | BEESocial</title>
+  <link rel="icon" href="../assets/img/logo.svg">
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../">
+
+  <div id="navbar"></div>
+
+  <main class="container">
+    <div class="card auth-card">
+      <h1>Welcome back to the hive</h1>
+      <p class="subtitle">Log in to see what the hive is buzzing about.</p>
+
+      <div id="message" class="message"></div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+        </div>
+
+        <div class="form-group check-row">
+          <input type="checkbox" id="showPassword">
+          <label for="showPassword">Show password</label>
+        </div>
+
+        <button type="submit" class="btn btn-full">Log in</button>
+      </form>
+
+      <p class="switch-text">New bee? <a href="signup.html">Create an account</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>BEESocial version 2.0 is a student project. No trackers, no cookies, and no servers. Made with honey and code.</p>
+  </footer>
+
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/login.js"></script>
+</body>
+</html>

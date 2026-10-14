@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy | BEESocial</title>
+  <link rel="icon" href="../assets/img/logo.svg">
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../">
+
+  <div id="navbar"></div>
+
+  <main class="container text-page">
+    <h1>Privacy and Security</h1>
+    <p class="subtitle">A plain explanation of what BEESocial does with your data.</p>
+
+    <div class="card">
+      <h2>What we store</h2>
+      <p>Everything is saved in your browser. Nothing leaves your device.</p>
+      <table>
+        <tr>
+          <th>Data</th>
+          <th>Where it is kept</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>Username, display name, bio, avatar color</td>
+          <td>Local storage</td>
+          <td>You can edit or delete these anytime.</td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>Local storage</td>
+          <td>Saved only as a salted SHA-256 hash.</td>
+        </tr>
+        <tr>
+          <td>Buzzes, replies, and honey (likes)</td>
+          <td>Local storage</td>
+          <td>Deleted when you delete the item or the account.</td>
+        </tr>
+        <tr>
+          <td>Day or night theme choice</td>
+          <td>Local storage</td>
+          <td>Remembers how you like the app to look.</td>
+        </tr>
+        <tr>
+          <td>Login session</td>
+          <td>Session storage</td>
+          <td>Cleared when you close the tab.</td>
+        </tr>
+      </table>
+      <p>Every saved item starts with the name beesocial. This keeps BEESocial data separate from older versions and from other apps in your browser.</p>
+    </div>
+
+    <div class="card">
+      <h2>What we protect against</h2>
+      <ul>
+        <li><strong>Password theft.</strong> We never save the real password. We save a hash made with a random salt.</li>
+        <li><strong>Password guessing.</strong> Five wrong tries lock the login form for 30 seconds.</li>
+        <li><strong>Script injection.</strong> All user text is cleaned before it is shown on the page.</li>
+        <li><strong>Data ownership.</strong> You can download a copy of your data or delete it at any time.</li>
+        <li><strong>Account guessing.</strong> Login errors do not say if the username or the password was wrong.</li>
+        <li><strong>Outside tracking.</strong> The pages load no outside scripts, fonts, or images.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Honest limits</h2>
+      <p>This is a student prototype. Please keep these limits in mind.</p>
+      <ul>
+        <li>Browser storage is not encrypted. Anyone who can open your browser tools on this device can read it.</li>
+        <li>Data does not sync between devices or browsers because there is no server.</li>
+        <li>SHA-256 with a salt is better than plain text but real platforms use slower methods made for passwords.</li>
+        <li>Clearing your browser data will erase your account.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>BEESocial version 2.0 is a student project. No trackers, no cookies, and no servers. Made with honey and code.</p>
+  </footer>
+
+  <script src="../src/js/main.js"></script>
+</body>
+</html>

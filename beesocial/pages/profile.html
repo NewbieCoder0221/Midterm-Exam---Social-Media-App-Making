@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | BEESocial</title>
+  <link rel="icon" href="../assets/img/logo.svg">
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../">
+
+  <div id="navbar"></div>
+
+  <main class="container">
+
+    <!-- Profile info, filled by profile.js -->
+    <div class="card profile-header">
+      <div id="profileHeader"></div>
+
+      <div class="stats">
+        <div><strong id="statPosts">0</strong>Buzzes</div>
+        <div><strong id="statLikes">0</strong>Honey received</div>
+        <div><strong id="statReplies">0</strong>Replies sent</div>
+        <div><strong id="statAnonymous">0</strong>Anonymous buzzes</div>
+      </div>
+    </div>
+
+    <h2>Your buzzes</h2>
+    <div id="postList"></div>
+
+  </main>
+
+  <footer class="footer">
+    <p>BEESocial version 2.0 is a student project. No trackers, no cookies, and no servers. Made with honey and code.</p>
+  </footer>
+
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/profile.js"></script>
+</body>
+</html>

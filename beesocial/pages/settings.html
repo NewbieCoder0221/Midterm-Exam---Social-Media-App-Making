@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | BEESocial</title>
+  <link rel="icon" href="../assets/img/logo.svg">
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../">
+
+  <div id="navbar"></div>
+
+  <main class="container">
+    <h1>Settings</h1>
+
+    <!-- Edit profile -->
+    <div class="card">
+      <h2>Edit profile</h2>
+      <div id="profileMessage" class="message"></div>
+
+      <form id="profileForm">
+        <div class="form-group">
+          <label for="displayName">Display name</label>
+          <input type="text" id="displayName" name="displayName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <textarea id="bio" name="bio" maxlength="120" placeholder="Tell people a little about you"></textarea>
+          <p class="hint">Up to 120 characters.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="avatarColor">Avatar color</label>
+          <select id="avatarColor" name="avatarColor"></select>
+        </div>
+
+        <button type="submit" class="btn">Save profile</button>
+      </form>
+    </div>
+
+    <!-- Change password -->
+    <div class="card">
+      <h2>Change password</h2>
+      <div id="passwordMessage" class="message"></div>
+
+      <form id="passwordForm">
+        <div class="form-group">
+          <label for="currentPassword">Current password</label>
+          <input type="password" id="currentPassword" name="currentPassword" autocomplete="current-password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="newPassword">New password</label>
+          <input type="password" id="newPassword" name="newPassword" autocomplete="new-password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmNewPassword">Confirm new password</label>
+          <input type="password" id="confirmNewPassword" name="confirmNewPassword" autocomplete="new-password" required>
+        </div>
+
+        <button type="submit" class="btn">Change password</button>
+      </form>
+    </div>
+
+    <!-- Download data -->
+    <div class="card">
+      <h2>Download my data</h2>
+      <p>Get a copy of your profile, your buzzes, and your replies as a file. Your password is not included.</p>
+      <div id="exportMessage" class="message"></div>
+      <button type="button" id="exportBtn" class="btn btn-outline">Download my data</button>
+    </div>
+
+    <!-- Delete account -->
+    <div class="card">
+      <h2>Delete account</h2>
+      <p>This removes your account, your buzzes, your replies, and your honey from this browser. It cannot be undone.</p>
+      <button type="button" id="deleteBtn" class="btn btn-danger">Delete my account</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>BEESocial version 2.0 is a student project. No trackers, no cookies, and no servers. Made with honey and code.</p>
+  </footer>
+
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/settings.js"></script>
+</body>
+</html>

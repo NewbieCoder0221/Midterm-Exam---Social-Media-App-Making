@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed | BEESocial</title>
+  <link rel="icon" href="../assets/img/logo.svg">
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../">
+
+  <div id="navbar"></div>
+
+  <main class="container">
+    <div class="layout">
+
+      <!-- Left card, filled by feed.js -->
+      <aside class="card sidebar" id="sidebar"></aside>
+
+      <section class="feed">
+
+        <!-- Write a post -->
+        <div class="card">
+          <h2>What is the buzz today?</h2>
+          <div id="message" class="message"></div>
+
+          <form id="postForm">
+            <div class="form-group">
+              <textarea id="postText" name="postText" maxlength="200" placeholder="Share a buzz with the hive..."></textarea>
+            </div>
+
+            <div class="compose-footer">
+              <div class="radio-group">
+                <div class="radio-row">
+                  <input type="radio" id="postNamed" name="visibility" value="named" checked>
+                  <label for="postNamed">Show my name</label>
+                </div>
+                <div class="radio-row">
+                  <input type="radio" id="postAnonymous" name="visibility" value="anonymous">
+                  <label for="postAnonymous">Post anonymously</label>
+                </div>
+              </div>
+
+              <span class="hint" id="charCount">0 / 200</span>
+              <button type="submit" class="btn">Buzz it</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Search -->
+        <div class="toolbar">
+          <input type="text" id="searchInput" placeholder="Search the hive...">
+          <select id="sortSelect" aria-label="Sort buzzes">
+            <option value="newest">Newest first</option>
+            <option value="honey">Most honey</option>
+          </select>
+        </div>
+
+        <!-- All posts, filled by feed.js -->
+        <div id="postList"></div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>BEESocial version 2.0 is a student project. No trackers, no cookies, and no servers. Made with honey and code.</p>
+  </footer>
+
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/feed.js"></script>
+</body>
+</html>

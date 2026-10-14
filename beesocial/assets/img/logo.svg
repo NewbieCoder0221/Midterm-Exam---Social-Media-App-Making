@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <clipPath id="logoBody"><ellipse cx="70" cy="68" rx="40" ry="30"/></clipPath>
+  </defs>
+  <polygon points="32,2 58,17 58,47 32,62 6,47 6,17" fill="#fff6e3" stroke="#e8a317" stroke-width="4" stroke-linejoin="round"/>
+  <g transform="translate(10 17) scale(0.31)">
+    <path d="M98 44 Q104 28 116 24" fill="none" stroke="#3b2314" stroke-width="5" stroke-linecap="round"/>
+    <path d="M106 48 Q116 36 128 38" fill="none" stroke="#3b2314" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="56" cy="32" rx="16" ry="26" transform="rotate(-20 56 32)" fill="#ffffff" stroke="#8a5a2b" stroke-width="4"/>
+    <ellipse cx="82" cy="30" rx="16" ry="26" transform="rotate(18 82 30)" fill="#ffffff" stroke="#8a5a2b" stroke-width="4"/>
+    <path d="M32 63 L8 68 L32 73 Z" fill="#3b2314"/>
+    <ellipse cx="70" cy="68" rx="40" ry="30" fill="#e8a317"/>
+    <g clip-path="url(#logoBody)">
+      <rect x="42" y="30" width="10" height="80" fill="#3b2314"/>
+      <rect x="62" y="30" width="10" height="80" fill="#3b2314"/>
+      <rect x="82" y="30" width="10" height="80" fill="#3b2314"/>
+    </g>
+    <ellipse cx="70" cy="68" rx="40" ry="30" fill="none" stroke="#3b2314" stroke-width="5"/>
+    <circle cx="104" cy="62" r="5.5" fill="#3b2314"/>
+  </g>
+</svg>
