@@ -214,11 +214,3 @@ These are the checks I did by hand.
 16. The downloaded data file has the profile, buzzes, and replies but no password information.
 17. Five wrong passwords lock the login form.
 18. Deleting the account removes the user, their buzzes, and their replies.
-
-## Future Ideas
-
-1. A bee that flies across the screen when a buzz is posted
-2. Following other bees and a feed of only the people followed
-3. Hashtags that can be clicked to filter the feed
-4. Encrypting saved data with a key based on the user's password
-5. Moving to a real backend with a proper password hashing method
