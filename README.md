@@ -31,7 +31,6 @@ BEESocial is a multi page static social media app. It was made for a web develop
 ```
 .
 ├── index.html
-├── README.md
 ├── pages/
 │   ├── login.html
 │   ├── signup.html
